@@ -31,13 +31,15 @@
 
 - (void)buttonTapped:(id)sender
 {
-    [TORoundedWindow setHidden:![TORoundedWindow hidden] animated:YES];
-}
+    BOOL hidden = ![TORoundedWindow hidden];
+    [TORoundedWindow setHidden:hidden animated:YES];
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+    NSString *title = hidden ? @"Show Rounded Corners" : @"Hide Rounded Corners";
 
+    UIButton *toggleButton = (UIButton *)sender;
+    [toggleButton setTitle:title forState:UIControlStateNormal];
+    [toggleButton sizeToFit];
+    toggleButton.center = self.view.center;
+}
 
 @end

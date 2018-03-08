@@ -1,12 +1,12 @@
-# TORoundedView
+# TORoundedWindow
 
 ![TORoundedView](screenshot.jpg)
 
-[![CocoaPods](https://img.shields.io/cocoapods/dt/TORoundedWindow.svg?maxAge=3600)](https://cocoapods.org/pods/TORoundedView)
-[![Version](https://img.shields.io/cocoapods/v/TORoundedView.svg?style=flat)](http://cocoadocs.org/docsets/TORoundedView)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TimOliver/TORoundedView/master/LICENSE)
-[![Platform](https://img.shields.io/cocoapods/p/TORoundedView.svg?style=flat)](http://cocoadocs.org/docsets/TORoundedView)
-[![Beerpay](https://beerpay.io/TimOliver/TORoundedView/badge.svg?style=flat)](https://beerpay.io/TimOliver/TORoundedView)
+[![CocoaPods](https://img.shields.io/cocoapods/dt/TORoundedWindow.svg?maxAge=3600)](https://cocoapods.org/pods/TORoundedWindow)
+[![Version](https://img.shields.io/cocoapods/v/TORoundedWindow.svg?style=flat)](http://cocoadocs.org/docsets/TORoundedWindow)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/TimOliver/TORoundedWindow/master/LICENSE)
+[![Platform](https://img.shields.io/cocoapods/p/TORoundedWindow.svg?style=flat)](http://cocoadocs.org/docsets/TORoundedWindow)
+[![Beerpay](https://beerpay.io/TimOliver/TORoundedWindow/badge.svg?style=flat)](https://beerpay.io/TimOliver/TORoundedWindow)
 [![PayPal](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M4RKULAVKV7K8)
 
 `TORoundedWindow` is a `UIWindow` subclass that adds rounded edges to the corners of your iOS app. It can be added at the launch of your app, and can be optionally hidden later if needed.

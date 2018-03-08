@@ -19,6 +19,12 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.title = @"TORoundedWindow";
+    if (@available(iOS 11.0, *)) {
+        self.navigationController.navigationBar.prefersLargeTitles = YES;
+        self.navigationController.navigationBar.largeTitleTextAttributes = @{NSFontAttributeName : [UIFont systemFontOfSize:30.0f weight:UIFontWeightBold]};
+    }
+    
     UIButton *toggleButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [toggleButton setTitle:@"Hide Rounded Corners" forState:UIControlStateNormal];
     [toggleButton addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];

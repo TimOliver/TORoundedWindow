@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'TORoundedWindow'
-  s.version  = '1.0.0'
+  s.version  = '1.0.1'
   s.license  =  { :type => 'MIT', :file => 'LICENSE' }
   s.summary  = 'A UIWindow overlay that adds rounded corners to the borders of your iOS apps.'
   s.homepage = 'https://github.com/TimOliver/TORoundedWindow'

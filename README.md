@@ -34,6 +34,26 @@ iOS 11 featured a very drastic change over the design language introduced in iOS
 
 ```
 
+You can also specify a custom size for the corner elements:
+
+```objc
+
+#import "TORoundedWindow.h"
+
+[TORoundedWindow showWithCornerRadius:10.0f];
+
+```
+
+You can also toggle the visibility of the corners:
+
+```objc
+
+#import "TORoundedWindow.h"
+
+[TORoundedWindow setHidden:YES animated:YES];
+
+```
+
 # Installation
 
 `TORoundedWindow` will work with iOS 7 and above. While written in Objective-C, it should easily import into Swift as well.

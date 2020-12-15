@@ -42,7 +42,7 @@ static TORoundedWindow *_sharedWindow = nil;
     CGRect mainScreenBounds = [UIScreen mainScreen].bounds;
     
     // This is a really silly way to detect if we're running on an iPhone X.
-    // If we're presenting this window befor the app has finished setting up,
+    // If we're presenting this window before the app has finished setting up,
     // `safeAreaInsets` is still set to 0.
     if (@available(iOS 11.0, *)) {
         
@@ -119,11 +119,14 @@ static TORoundedWindow *_sharedWindow = nil;
     UIGraphicsBeginImageContextWithOptions(frame.size, NO, 0.0f);
     {
         UIBezierPath* bezierPath = [UIBezierPath bezierPath];
-        [bezierPath moveToPoint: CGPointMake(CGRectGetMinX(frame) + 1.00000 * frame.size.width, CGRectGetMinY(frame) + 0.00000 * frame.size.height)];
-        [bezierPath addCurveToPoint: CGPointMake(CGRectGetMinX(frame) + 0.39185 * frame.size.width, CGRectGetMinY(frame) + 0.20611 * frame.size.height) controlPoint1: CGPointMake(CGRectGetMinX(frame) + 0.77121 * frame.size.width, CGRectGetMinY(frame) + -0.00000 * frame.size.height) controlPoint2: CGPointMake(CGRectGetMinX(frame) + 0.56036 * frame.size.width, CGRectGetMinY(frame) + 0.07684 * frame.size.height)];
-        [bezierPath addCurveToPoint: CGPointMake(CGRectGetMinX(frame) + 0.00000 * frame.size.width, CGRectGetMinY(frame) + 1.00000 * frame.size.height) controlPoint1: CGPointMake(CGRectGetMinX(frame) + 0.15360 * frame.size.width, CGRectGetMinY(frame) + 0.38889 * frame.size.height) controlPoint2: CGPointMake(CGRectGetMinX(frame) + 0.00000 * frame.size.width, CGRectGetMinY(frame) + 0.67651 * frame.size.height)];
-        [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(frame) + 0.00000 * frame.size.width, CGRectGetMinY(frame) + 0.00000 * frame.size.height)];
+        [bezierPath moveToPoint: CGPointMake(CGRectGetMinX(frame) + 1.00000 * frame.size.width, CGRectGetMinY(frame) + 0.00062 * frame.size.height)];
+        [bezierPath addCurveToPoint: CGPointMake(CGRectGetMinX(frame) + 0.63149 * frame.size.width, CGRectGetMinY(frame) + 0.07491 * frame.size.height) controlPoint1: CGPointMake(CGRectGetMinX(frame) + 0.86209 * frame.size.width, CGRectGetMinY(frame) + 0.01907 * frame.size.height) controlPoint2: CGPointMake(CGRectGetMinX(frame) + 0.74886 * frame.size.width, CGRectGetMinY(frame) + 0.03780 * frame.size.height)];
+        [bezierPath addCurveToPoint: CGPointMake(CGRectGetMinX(frame) + 0.07491 * frame.size.width, CGRectGetMinY(frame) + 0.63149 * frame.size.height) controlPoint1: CGPointMake(CGRectGetMinX(frame) + 0.37282 * frame.size.width, CGRectGetMinY(frame) + 0.16906 * frame.size.height) controlPoint2: CGPointMake(CGRectGetMinX(frame) + 0.16906 * frame.size.width, CGRectGetMinY(frame) + 0.37282 * frame.size.height)];
+        [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(frame) + 0.06550 * frame.size.width, CGRectGetMinY(frame) + 0.66993 * frame.size.height)];
+        [bezierPath addCurveToPoint: CGPointMake(CGRectGetMinX(frame) + 0.00873 * frame.size.width, CGRectGetMinY(frame) + 1.00000 * frame.size.height) controlPoint1: CGPointMake(CGRectGetMinX(frame) + 0.03345 * frame.size.width, CGRectGetMinY(frame) + 0.76703 * frame.size.height) controlPoint2: CGPointMake(CGRectGetMinX(frame) + 0.01709 * frame.size.width, CGRectGetMinY(frame) + 0.86931 * frame.size.height)];
+        [bezierPath addCurveToPoint: CGPointMake(CGRectGetMinX(frame) + 0.00000 * frame.size.width, CGRectGetMinY(frame) + 0.00000 * frame.size.height) controlPoint1: CGPointMake(CGRectGetMinX(frame) + 0.00000 * frame.size.width, CGRectGetMinY(frame) + 1.00000 * frame.size.height) controlPoint2: CGPointMake(CGRectGetMinX(frame) + 0.00000 * frame.size.width, CGRectGetMinY(frame) + 0.00000 * frame.size.height)];
         [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(frame) + 1.00000 * frame.size.width, CGRectGetMinY(frame) + 0.00000 * frame.size.height)];
+        [bezierPath addLineToPoint: CGPointMake(CGRectGetMinX(frame) + 1.00000 * frame.size.width, CGRectGetMinY(frame) + 0.00062 * frame.size.height)];
         [bezierPath closePath];
         [UIColor.blackColor setFill];
         [bezierPath fill];
